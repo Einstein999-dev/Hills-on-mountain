@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@900&family=Nabla&display=swap');
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /* Background colors */
+    --dark: #252525;
+    --light: #ADD8E6;
+    --blue:#234E70;
+
+    /* text colors */
+
+    /* font family  */
+    --primary-font:'Jost', cursive;
+    --secondary-font:'Ubuntu', sans-serif;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+    background-image: url(/img/body-bg.png.webp);
+}
+
+a{
+    text-decoration: none;
+}
+
+section{
+    padding: 80px 0;
+}
+
+footer{
+    padding: 20px 0;
+}
+
+.main-btn{
+    display: inline-block;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgb(118, 85, 225 / 30%);
+    border:double 2px transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    transition: 0.3s all ease-in-out;
+}
+.small-btn{
+    display: inline-block;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgb(118, 85, 225 / 30%);
+    border:double 2px transparent;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.3s all ease-in-out;
+}
+
+.primary-btn{
+    background: var(--blue);
+    color: white;
+}
+.primary-btn:hover{
+    border-color: var(--blue);
+    background-color: black;
+    color: var(--light);
+    box-shadow: none;
+}
+.secondary-btn{
+    background: white;
+    color: var(--blue);
+    border-color: black;
+}
+.secondary-btn:hover{
+    border-color: var(--blue);
+    background-color: black;
+    color: var(--light);
+    box-shadow: none;
+}
+.third-btn{
+    background: rgb(120, 190, 233);
+    color: #252525;
+    border-color: black;
+}
+.third-btn:hover{
+    border-color: #252525;
+    background-color: black;
+    color: white;
+    box-shadow: none;
+}
+.text-blue{
+    color: #529eb8;
+}
+h1{
+    font-size: 75px;
+    line-height: 60px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 20px;
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+}
+h2{
+    font-size: 40px;
+    line-height: 55px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 20px;
+    font-family: var(--primary-font);
+}
+h3{
+    font-size: 35px;
+    line-height: 50px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 15px;
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+}
+h5{
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 35px;
+}
+p{
+    color: rgb(211, 211, 211);
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+/* navar styaling  */
+
+.header_wrapper nav{
+    background-color: #4cafa4;
+}
+
+.header_wrapper .navbar-brand{
+    transition: 0.3s ease all;
+}
+.header_wrapper .navbar-brand:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease all;   
+}
+.header_wrapper .navbar-toggler:focus{
+    box-shadow: none;
+}
+.header_wrapper .navbar-toggler{
+    border: none;
+    align-items: center;
+}
+.header_wrapper .menu-navbar-nav{
+    gap: 20px;
+}
+.header_wrapper .navbar-toggler:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease all;
+}
+.header_wrapper .navbar-nav .nav-item .nav-link{
+    font-size: 20px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    font-weight: 600;
+    color: #252525;
+}
+.header_wrapper .nav-item .nav-link.active,
+.header_wrappern.nav-item .navlink:hover{
+    transition: 0.3s all ease;
+    color: white;
+}
+/* navbar ends  */
+
+/* home stylings  */
+
+.home_wrapper{
+    background-image: url(/img/Scene-24.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 700px;
+}
+.home_wrapper .home-content{
+    align-items: center;
+    justify-content: center;
+    padding-top: 140px;
+}
+
+/* home ends  */
+
+/* service styling  */
+
+.service_wrapper{
+    background: #378064;
+}
+.service_wrapper .card{
+    width: 300px;
+    height: 400px;
+    margin-top: 20px;
+    border: none;
+    background-color: #378064;
+    text-align: center;
+}
+.service_wrapper .card .card-img-top{
+    fill: #ffff;
+}
+
+/* service ends  */
+
+/* portfolio strats */
+
+.portfolio_wrapper{
+    background: #378064;
+}
+.portfolio_wrapper .card img{
+    border-radius: 10px;
+    transition: all ease-in-out 0.3s;
+}
+.portfolio_wrapper .card{
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    pointer-events: all;
+    overflow: hidden;
+    border-radius: 10px;
+    object-fit:cover;
+    transition: all ease-in-out 0.4s;
+}
+.portfolio_wrapper .card img:hover{
+    transform: scale(1.25);
+}
+.card:hover .card:not(:hover) {
+    filter: grayscale(1) blur(1px);
+}
+
+/* portfolio ends */
+
+/* keypoint strats */
+
+.keypoint_wrapper{
+    background: #378064;
+}
+.keypoint_wrapper .row{
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    padding: 10px;
+}
+.keypoint_wrapper .key .row{
+    background-color: #4cafa33f;
+}
+.keypoint_wrapper .carousel-inner{
+    padding-bottom: 50px;
+}
+
+/* keypoint ends  */
+
+/* team starts */
+
+.team_wrapper{
+    background: #378064;
+}
+.team_wrapper .card{
+    background-color: #578f89b0;
+    border-radius: 20px;
+}
+.team_wrapper .row img{
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+/* team ends  */
+
+/* comapny start  */
+
+.company_wrapper{
+    background-color: #378064;
+}
+.company_wrapper .row{
+    justify-items: center;
+}
+.company_wrapper .row .card{
+    background: none;
+    border: none;
+    padding: 50px;
+}
+/* comapny ends  */
+
+/* contact starts  */
+
+.contact_wrapper{
+    background: #378064;
+    margin-top: -35px;
+}
+.contact_wrapper .row .mail{
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+.contact_wrapper span i{
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+.contact_wrapper span i:hover{
+    transform: scale(1.1);
+    color: rgba(255, 255, 255, 0.752);
+}
+
+/* contsact ends  */
